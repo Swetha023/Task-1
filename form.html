@@ -1,0 +1,71 @@
+<style>
+    .about{
+        padding: 20px;
+        margin-left: 70px;
+    }
+
+    .name{
+        margin-left: 70px;
+    }
+    .zip{
+        margin-left: 50px;
+    }
+    .lan{
+        margin-left: 45px;
+    }
+    .gender{
+        margin-left: 65px;
+    }
+    .pass{
+        margin-left: 50px;
+    }
+    .number{
+        margin-left: 15px;
+    }
+    .mail{
+        margin-left: 70px;
+    }
+</style>
+
+
+<form action="/action_page.php" target="_blank">
+    <p>
+        Name: <input class="name" type="text" required>
+    </p>
+    <p>
+        Email: <input class="mail" type="text" required>
+    </p>
+    <p> 
+        Password: <input class="pass" type="password" required>
+    </p>
+    <p>
+        Phone Number: <input class="number" type="number" required>
+    </p>
+    <p>
+      Gender: <span class="gender"> Male:  <input type = "radio" name = "Gender" value = "male" required> 
+       Female: <input type = "radio" name = "Gender" value = "female" required>
+       Others: <input type="radio" name="Gender" value="others" required> </span>
+    </p>
+    <p>
+        <label for="lang">Language: </label>
+        <select name="lang" class="lan">
+        <option value="Select language">Select language</option>
+        <option value="Tamil">Tamil</option>
+        <option value="English">English</option>
+        <option value="Malayalam">Malayalam</option>
+        <option value="Telugu">Telugu</option>
+        <option value="Hindi">Hindi</option>
+        <option value="kannada">Kannada</option>
+    </select>
+    </p>
+    <p>
+        Zip Code: <input class="zip" type="number" required>
+    </p>
+    <p>
+        About: <textarea name="about" class="about"></textarea>
+    </p>
+    <p>
+        <button>Register</button>
+        <button type="reset" value="reset">Reset</button>
+    </p>
+</form>
